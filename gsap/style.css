@@ -1,0 +1,19 @@
+body{
+    background: linear-gradient(#DE6262, #FFB88C); 
+}
+.container{
+    margin-left: 47%;    
+    margin-top: 15%;
+}
+.box{
+    background: #2d3436;
+    float: right;
+    margin-bottom: 10px;
+    
+    width: 150px;
+    height: 150px;
+    border: white;
+    border-radius: 3px;
+    margin-right: 25px;
+    
+}
