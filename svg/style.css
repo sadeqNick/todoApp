@@ -1,0 +1,40 @@
+.idiot{
+	height: 500px;
+	width:500px;
+	margin-left: 35%;
+}
+#button{
+	background-color: #3498db;
+	color: #fff;
+	width: 100%;
+	height: 50px;
+	margin-bottom: 4px;
+}
+#button-move{
+	background-color: #e74c3c;
+	color: #fff;
+	width: 100%;
+	height: 50px;
+	margin-bottom: 4px;
+}
+.blueEyes #eyeColor{
+	fill:#3498db;
+}
+@keyframes moveEyes {
+	0%{
+		transform: translate(2    px,10px);
+        }
+	40%{
+			transform: translate(0,0);
+		}	
+    60%{
+        transform: translate(-10px,0)
+    }
+    80%{
+        transform: translate(5px,0)
+    }
+	
+}
+.move-around #innerEye{
+	animation: moveEyes 6s infinite;
+}
