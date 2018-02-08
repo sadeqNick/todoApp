@@ -1,0 +1,40 @@
+<html>
+<head>
+	<style>
+		.height{
+			height: 600px;
+		}
+		.banner{
+			text-align: center;
+			display: block;
+			padding: 50px 0;
+			font-size: 45px;
+			opacity: 0;
+			
+			background-color: #3498db;
+			color: #fff;
+			font-weight: bold;
+			width: 0%;
+			transition: 1s;
+		}
+		.banner.fadeIn{
+			opacity: 1;
+			width: 100%;
+		}
+	</style>
+</head>
+<body>
+	<div class="height"></div>
+	<div class="banner"> Scroll ! </div>
+	<div class="height"></div>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>	
+	<script>
+	var controller = new ScrollMagic.Controller();
+	var scene = new ScrollMagic.Scene({
+	triggerElement : '.banner'
+	}).setClassToggle('.banner', 'fadeIn').addTo(controller);
+	</script>
+	
+</body>
+</html>
